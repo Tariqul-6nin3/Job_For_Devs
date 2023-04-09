@@ -1,0 +1,140 @@
+[
+  {
+    "job_id": "f4a3b3ab-352c-4d1a-88f5-5d5ee5c5d6e5",
+    "company_logo": "https://i.postimg.cc/RCKDcpMz/carson-masterson-0m-Xw-dvu-Lok-unsplash.jpg",
+    "job_title": "Software Developer",
+    "company_name": "Acme Corporation",
+    "location": "New York, NY",
+    "salary": "80,000 - 100,000 USD",
+    "job_description": "We are seeking a talented software developer to join our team...",
+    "job_responsibilities": "As a software developer, you will be responsible for developing high-quality software solutions, collaborating with cross-functional teams, writing clean and efficient code, contributing to the continuous improvement of our software development processes, and staying up-to-date with emerging trends and technologies in software development.",
+    "educational_requirements": "Bachelor's degree in Computer Science or a related field",
+    "experience": "3+ years of experience in software development",
+    "contact_information": {
+      "phone": "123-456-7890",
+      "email": "jobs@acmecorp.com",
+      "address": {
+        "street": "123 Main St",
+        "city": "New York",
+        "state": "NY",
+        "zip": "10001",
+        "country": "USA"
+      }
+    }
+  },
+  {
+    "job_id": "d7295ed6-413f-4c8b-b931-6e1fb82d89db",
+    "company_logo": "https://i.postimg.cc/7LjKz0d6/chris-kursikowski-ze5w-HM9kplc-unsplash.jpg",
+    "job_title": "Web Developer",
+    "company_name": "Beta Technologies",
+    "location": "Los Angeles, CA",
+    "salary": "70,000 - 90,000 USD",
+    "job_description": "We are seeking an experienced web developer to join our team...",
+    "job_responsibilities": "As a web developer, you will be responsible for designing and developing responsive websites, collaborating with designers and other team members, writing clean and efficient code, troubleshooting and debugging issues, and staying up-to-date with emerging trends and technologies in web development.",
+    "educational_requirements": "Bachelor's degree in Computer Science, Web Development, or a related field",
+    "experience": "2+ years of experience in web development",
+    "contact_information": {
+      "phone": "555-555-5555",
+      "email": "jobs@betatech.com",
+      "address": {
+        "street": "456 Main St",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90001",
+        "country": "USA"
+      }
+    }
+  },
+  {
+    "job_id": " 01df8abf-9d36-45a1-91f2-99b771d79834",
+    "company_logo": "https://i.postimg.cc/HsTBbpZQ/jannis-lucas-e-QGki-Wlc-Km-I-unsplash.jpg",
+    "job_title": "Software Engineer",
+    "company_name": "Gamma Technologies",
+    "location": "Austin, TX",
+    "salary": "100,000 - 120,000 USD",
+    "job_description": "We are seeking a talented software engineer to join our team...",
+    "job_responsibilities": "As a software engineer, you will be responsible for designing and implementing software solutions, collaborating with cross-functional teams, debugging and troubleshooting issues, and staying up-to-date with emerging technologies and industry trends.",
+    "educational_requirements": "Bachelor's degree in Computer Science or a related field",
+    "experience": "5+ years of experience in software development",
+    "contact_information": {
+      "phone": "555-555-5555",
+      "email": "jobs@gammatech.com",
+      "address": {
+        "street": "123 Main St",
+        "city": "Austin",
+        "state": "TX",
+        "zip": "78701",
+        "country": "USA"
+      }
+    }
+  },
+  {
+    "job_id": "c3fd3a3e-bc21-4381-9eaf-d69ee17f12c1",
+    "company_logo": "https://i.postimg.cc/kgpsrWnc/obi-pixel7propix-Jd-Bj-CGGl2jk-unsplash.jpg",
+    "job_title": "Data Scientist",
+    "company_name": "Zeta Analytics",
+    "location": "New York, NY",
+    "salary": "120,000 - 140,000 USD",
+    "job_description": "We are seeking a skilled data scientist to join our team...",
+    "job_responsibilities": "As a data scientist, you will be responsible for analyzing large datasets, developing predictive models, collaborating with cross-functional teams, presenting findings to stakeholders, and staying up-to-date with emerging trends and technologies in data science.",
+    "educational_requirements": "Master's degree in Data Science, Statistics, or a related field",
+    "experience": "3+ years of experience in data science",
+    "contact_information": {
+      "phone": "999-999-9999",
+      "email": "jobs@zetaanalytics.com",
+      "address": {
+        "street": "456 Main St",
+        "city": "New York",
+        "state": "NY",
+        "zip": "10001",
+        "country": "USA"
+      }
+    }
+  },
+  {
+    "job_id": "a97aaedc-0b63-4dcf-b4d4-d4eeb04e63af",
+    "company_logo": "https://i.postimg.cc/Jnb5Bgj6/scott-webb-bmmcf-Zq-Sj-BU-unsplash.jpg",
+    "job_title": "Marketing Manager",
+    "company_name": "Delta Corporation",
+    "location": "Seattle, WA",
+    "salary": "90,000 - 110,000 USD",
+    "job_description": "We are seeking a talented marketing manager to lead our team...",
+    "job_responsibilities": "As a marketing manager, you will be responsible for developing and executing marketing strategies, managing a team of marketing professionals, collaborating with cross-functional teams, tracking and analyzing campaign performance, and staying up-to-date with emerging trends and technologies in marketing.",
+    "educational_requirements": "Bachelor's degree in Marketing, Business Administration, or a related field",
+    "experience": "5+ years of experience in marketing management",
+    "contact_information": {
+      "phone": "777-777-7777",
+      "email": "jobs@deltacorp.com",
+      "address": {
+        "street": "321 Main St",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98101",
+        "country": "USA"
+      }
+    }
+  },
+  {
+    "job_id": "7523df09-fb75-4a96-a2a5-5f5d179b9d5b",
+    "company_logo": "https://i.postimg.cc/DyfP8x06/viktor-forgacs-MGVLBu-XS6-Ic-unsplash.jpg",
+    "job_title": "UX Designer",
+    "company_name": "Epsilon Design",
+    "location": "San Francisco, CA",
+    "salary": "80,000 - 100,000 USD",
+    "job_description": "We are seeking a skilled UX designer to join our team...",
+    "job_responsibilities": "As a UX designer, you will be responsible for conducting user research, designing and prototyping user interfaces, collaborating with cross-functional teams, conducting usability testing, and staying up-to-date with emerging trends and technologies in UX design.",
+    "educational_requirements": "Bachelor's degree in Graphic Design, HCI, or a related field",
+    "experience": "3+ years of experience in UX design",
+    "contact_information": {
+      "phone": "888-888-8888",
+      "email": "jobs@epsilondesign.com",
+      "address": {
+        "street": "555 Main St",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94101",
+        "country": "USA"
+      }
+    }
+  }
+]
