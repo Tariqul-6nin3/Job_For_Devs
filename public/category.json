@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "logo": "https://i.postimg.cc/Ls6NXj9G/accounts-1.png",
+    "name": "Software Development",
+    "jobs_available": "100+ jobs available"
+  },
+  {
+    "id": 2,
+    "logo": "https://i.postimg.cc/SR8G5rdY/chip-1.png",
+    "name": "Data Science",
+    "jobs_available": "300+ jobs available"
+  },
+  {
+    "id": 4,
+    "logo": "https://i.postimg.cc/mr5Ngq6F/Group-13.png",
+    "name": "Cloud Computing",
+    "jobs_available": "50+ jobs available"
+  },
+  {
+    "id": 4,
+    "logo": "https://i.postimg.cc/Hs9wyjhm/social-media-1.png",
+    "name": "Product Management",
+    "jobs_available": "75+ jobs available"
+  }
+]
