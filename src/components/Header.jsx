@@ -23,7 +23,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="/"
+                to="/statistics"
                 aria-label="Shop"
                 title="Shop"
                 className={({ isActive }) => (isActive ? "active" : "default")}>
@@ -32,7 +32,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="/"
+                to="/feature"
                 aria-label="Shop"
                 title="Shop"
                 className={({ isActive }) => (isActive ? "active" : "default")}>
@@ -41,7 +41,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="/"
+                to="/blogs"
                 aria-label="About Us"
                 title="About Us"
                 className={({ isActive }) => (isActive ? "active" : "default")}>

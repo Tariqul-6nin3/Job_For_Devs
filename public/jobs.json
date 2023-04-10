@@ -1,7 +1,7 @@
 [
   {
     "job_id": "f4a3b3ab-352c-4d1a-88f5-5d5ee5c5d6e5",
-    "company_logo": "https://i.postimg.cc/RCKDcpMz/carson-masterson-0m-Xw-dvu-Lok-unsplash.jpg",
+    "company_logo": "https://i.postimg.cc/V6B82DrY/walt-disney-logo.png",
     "job_title": "Software Developer",
     "company_name": "Acme Corporation",
     "location": "New York, NY",
@@ -20,11 +20,13 @@
         "zip": "10001",
         "country": "USA"
       }
-    }
+    },
+    "job_type": "fulltime",
+    "work_location": "onsite"
   },
   {
     "job_id": "d7295ed6-413f-4c8b-b931-6e1fb82d89db",
-    "company_logo": "https://i.postimg.cc/7LjKz0d6/chris-kursikowski-ze5w-HM9kplc-unsplash.jpg",
+    "company_logo": "https://i.postimg.cc/MTh9bSKH/verizon-logo.png",
     "job_title": "Web Developer",
     "company_name": "Beta Technologies",
     "location": "Los Angeles, CA",
@@ -43,57 +45,63 @@
         "zip": "90001",
         "country": "USA"
       }
-    }
+    },
+    "job_type": "fulltime",
+    "work_location": "onsite"
   },
   {
-    "job_id": " 01df8abf-9d36-45a1-91f2-99b771d79834",
-    "company_logo": "https://i.postimg.cc/HsTBbpZQ/jannis-lucas-e-QGki-Wlc-Km-I-unsplash.jpg",
-    "job_title": "Software Engineer",
-    "company_name": "Gamma Technologies",
-    "location": "Austin, TX",
-    "salary": "100,000 - 120,000 USD",
-    "job_description": "We are seeking a talented software engineer to join our team...",
-    "job_responsibilities": "As a software engineer, you will be responsible for designing and implementing software solutions, collaborating with cross-functional teams, debugging and troubleshooting issues, and staying up-to-date with emerging technologies and industry trends.",
-    "educational_requirements": "Bachelor's degree in Computer Science or a related field",
-    "experience": "5+ years of experience in software development",
+    "job_id": "d114584f-b8cc-4a4e-b4ad-d29ebeba72af",
+    "company_logo": "https://i.postimg.cc/Nj5rYrxh/toyota-logo.png",
+    "job_title": "Data Scientist",
+    "company_name": "Insight Analytics",
+    "location": "Chicago, IL",
+    "salary": "90,000 - 120,000 USD",
+    "job_description": "We are seeking a talented data scientist to join our team...",
+    "job_responsibilities": "As a data scientist, you will be responsible for analyzing large datasets, building predictive models, communicating insights to stakeholders, collaborating with cross-functional teams, and staying up-to-date with emerging trends and technologies in data science.",
+    "educational_requirements": "Master's degree in Computer Science, Data Science, or a related field",
+    "experience": "5+ years of experience in data science",
     "contact_information": {
       "phone": "555-555-5555",
-      "email": "jobs@gammatech.com",
+      "email": "jobs@insightanalytics.com",
       "address": {
-        "street": "123 Main St",
-        "city": "Austin",
-        "state": "TX",
-        "zip": "78701",
+        "street": "789 Main St",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60601",
         "country": "USA"
       }
-    }
+    },
+    "job_type": "full-time",
+    "work_location": "remote"
   },
   {
-    "job_id": "c3fd3a3e-bc21-4381-9eaf-d69ee17f12c1",
-    "company_logo": "https://i.postimg.cc/kgpsrWnc/obi-pixel7propix-Jd-Bj-CGGl2jk-unsplash.jpg",
-    "job_title": "Data Scientist",
-    "company_name": "Zeta Analytics",
-    "location": "New York, NY",
-    "salary": "120,000 - 140,000 USD",
-    "job_description": "We are seeking a skilled data scientist to join our team...",
-    "job_responsibilities": "As a data scientist, you will be responsible for analyzing large datasets, developing predictive models, collaborating with cross-functional teams, presenting findings to stakeholders, and staying up-to-date with emerging trends and technologies in data science.",
-    "educational_requirements": "Master's degree in Data Science, Statistics, or a related field",
-    "experience": "3+ years of experience in data science",
+    "job_id": "8f1e9622-c077-4f60-8e3e-27c28c3b05f3",
+    "company_logo": "https://i.postimg.cc/rmFTX5Sx/sap-logo.png",
+    "job_title": "UX Designer",
+    "company_name": "DesignWorks",
+    "location": "San Francisco, CA",
+    "salary": "80,000 - 100,000 USD",
+    "job_description": "We are seeking a talented UX designer to join our team...",
+    "job_responsibilities": "As a UX designer, you will be responsible for creating user-centered designs, conducting user research, prototyping and testing designs, collaborating with cross-functional teams, and staying up-to-date with emerging trends and technologies in UX design.",
+    "educational_requirements": "Bachelor's degree in Graphic Design, Interaction Design, or a related field",
+    "experience": "3+ years of experience in UX design",
     "contact_information": {
-      "phone": "999-999-9999",
-      "email": "jobs@zetaanalytics.com",
+      "phone": "123-456-7890",
+      "email": "jobs@designworks.com",
       "address": {
         "street": "456 Main St",
-        "city": "New York",
-        "state": "NY",
-        "zip": "10001",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94101",
         "country": "USA"
       }
-    }
+    },
+    "job_type": "part-time",
+    "work_location": "onsite"
   },
   {
     "job_id": "a97aaedc-0b63-4dcf-b4d4-d4eeb04e63af",
-    "company_logo": "https://i.postimg.cc/Jnb5Bgj6/scott-webb-bmmcf-Zq-Sj-BU-unsplash.jpg",
+    "company_logo": "https://i.postimg.cc/W34BfTv7/oracle-logo.png",
     "job_title": "Marketing Manager",
     "company_name": "Delta Corporation",
     "location": "Seattle, WA",
@@ -112,11 +120,13 @@
         "zip": "98101",
         "country": "USA"
       }
-    }
+    },
+    "job_type": "full-time",
+    "work_location": "onsite"
   },
   {
     "job_id": "7523df09-fb75-4a96-a2a5-5f5d179b9d5b",
-    "company_logo": "https://i.postimg.cc/DyfP8x06/viktor-forgacs-MGVLBu-XS6-Ic-unsplash.jpg",
+    "company_logo": "https://i.postimg.cc/kML58hQH/nike-logo.png",
     "job_title": "UX Designer",
     "company_name": "Epsilon Design",
     "location": "San Francisco, CA",
@@ -135,6 +145,8 @@
         "zip": "94101",
         "country": "USA"
       }
-    }
+    },
+    "job_type": "part-time",
+    "work_location": "remote"
   }
 ]

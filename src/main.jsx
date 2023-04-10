@@ -3,9 +3,11 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Home from "./components/Home";
 import Feature from "./components/Feature";
-import { getData } from "./utulity/loader";
+import Details from "./components/Details";
+import Home from "./components/Home";
+import Statistics from "./components/Statistics";
+import Blogs from "./components/Blogs";
 
 const router = createBrowserRouter([
   {
@@ -17,9 +19,22 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/",
+        path: "/feature",
         element: <Feature />,
-        loader: getData(),
+        loader: () => fetch("/public/jobs.json"),
+      },
+      {
+        path: "job/:jobId",
+        element: <Details />,
+        loader: () => fetch("jobs.json"),
+      },
+      {
+        path: "/statistics",
+        element: <Statistics />,
+      },
+      {
+        path: "/blogs",
+        element: <Blogs />,
       },
     ],
   },

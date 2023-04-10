@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from "react";
+import SingleCategory from "./SingleCategory";
 
 const Category = () => {
   const [category, setCategory] = useState();
-  console.log(category);
-  useEffect(async () => {
-    const cateData = await fetch("category.json");
-    const category = await cateData.json();
-    const data = setCategory(data);
+  // console.log(category);
+  useEffect(() => {
+    const fetchCategoryData = async () => {
+      const cateData = await fetch("category.json");
+      const category = await cateData.json();
+      setCategory(category);
+    };
+    fetchCategoryData();
   }, []);
+
   return (
     <>
       <section className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
@@ -18,7 +23,11 @@ const Category = () => {
             need. Its your future
           </p>
         </div>
-        {/* <div>{category.map(cate => console.log(cate))}</div> */}
+        <div className="flex justify-evenly">
+          {category?.map(cate => (
+            <SingleCategory key={cate.id} cate={cate} />
+          ))}
+        </div>
       </section>
     </>
   );
