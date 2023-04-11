@@ -7,6 +7,7 @@ import {
   PhoneArrowDownLeftIcon,
   PresentationChartBarIcon,
 } from "@heroicons/react/24/solid";
+import { addToCart } from "../utility/fakeDB";
 
 const Details = () => {
   const [details, setDetails] = useState({});
@@ -18,7 +19,9 @@ const Details = () => {
     const matchingJob = jobData.find(job => job.job_id === jobId);
     setDetails(matchingJob || {});
   }, [jobData, jobId]);
+
   const {
+    job_id,
     job_description,
     job_responsibilities,
     educational_requirements,
@@ -31,7 +34,7 @@ const Details = () => {
   const address1 = details?.contact_information?.address?.street;
   const address2 = details?.contact_information?.address?.city;
   const address3 = details?.contact_information?.address?.country;
-  // console.log(address);
+  console.log(job_description);
   return (
     <div>
       <div className="grid grid-cols-5 px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
@@ -55,39 +58,50 @@ const Details = () => {
         </div>
         <div className="col-2">
           <div>
-            <h3>Job detais</h3>
-            <p>
-              <CurrencyDollarIcon className="w-6 h-6 inline text-black-50 " />
-              <strong>Salary:</strong>
+            <div>
+              <h3>Job detais</h3>
+              <hr />
+              <p>
+                <CurrencyDollarIcon className="w-6 h-6 inline text-black-50 " />
+                <strong>Salary:</strong>
 
-              {salary}
-            </p>
-            <p>
-              <PresentationChartBarIcon className="w-6 h-6 inline text-black-50" />
-              <strong>Job title:</strong>
-              {job_title}
-            </p>
+                {salary}
+              </p>
+              <p>
+                <PresentationChartBarIcon className="w-6 h-6 inline text-black-50" />
+                <strong>Job title:</strong>
+                {job_title}
+              </p>
+            </div>
+
+            <div>
+              <h3>Contact Information:</h3>
+              <hr />
+              <p>
+                <PhoneArrowDownLeftIcon className="w-6 h-6 inline text-black-50 " />
+                <strong>Phone:</strong>
+
+                {phone}
+              </p>
+              <p>
+                <EnvelopeIcon className="w-6 h-6 inline text-black-50 " />
+                <strong>Email:</strong>
+
+                {email}
+              </p>
+              <p>
+                <MapPinIcon className="w-6 h-6 inline text-black-50 " />
+                <strong>Address:</strong>
+                {address1},{address2}, {address3}
+              </p>
+            </div>
           </div>
-          <hr />
           <div>
-            <h3>Contact Information:</h3>
-            <p>
-              <PhoneArrowDownLeftIcon className="w-6 h-6 inline text-black-50 " />
-              <strong>Phone:</strong>
-
-              {phone}
-            </p>
-            <p>
-              <EnvelopeIcon className="w-6 h-6 inline text-black-50 " />
-              <strong>Email:</strong>
-
-              {email}
-            </p>
-            <p>
-              <MapPinIcon className="w-6 h-6 inline text-black-50 " />
-              <strong>Address:</strong>
-              {address1},{address2}, {address3}
-            </p>
+            <button
+              onClick={() => addToCart(job_id, 1)}
+              className="btn-primary">
+              Apply Now
+            </button>
           </div>
         </div>
       </div>

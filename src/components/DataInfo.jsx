@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { getId } from "../utulity/getId";
+
 
 const DataInfo = ({ dataInfo }) => {
   //   console.log(dataInfo);

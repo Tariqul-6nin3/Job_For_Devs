@@ -8,11 +8,14 @@ import Details from "./components/Details";
 import Home from "./components/Home";
 import Statistics from "./components/Statistics";
 import Blogs from "./components/Blogs";
+import AppliedJobs from "./components/AppliedJobs";
+import ErrorPage from "./components/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -31,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/statistics",
         element: <Statistics />,
+      },
+      {
+        path: "/applied",
+        element: <AppliedJobs />,
       },
       {
         path: "/blogs",
