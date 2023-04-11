@@ -15,18 +15,18 @@ import {
 
 const Statistics = () => {
   const data = [
-    { assignment: 1, score: 56 },
-    { assignment: 2, score: 34 },
-    { assignment: 3, score: 42 },
-    { assignment: 4, score: 49 },
-    { assignment: 5, score: 22 },
-    { assignment: 6, score: 51 },
-    { assignment: 7, score: 39 },
-    { assignment: 8, score: 46 },
+    { assignment: "Assignment-1", score: 60 },
+    { assignment: "Assignment-2", score: 59 },
+    { assignment: "Assignment-3", score: 60 },
+    { assignment: "Assignment-4", score: 50 },
+    { assignment: "Assignment-5", score: 60 },
+    { assignment: "Assignment-6", score: 60 },
+    { assignment: "Assignment-7", score: 60 },
+    { assignment: "Assignment-8", score: 60 },
   ];
 
   return (
-    <div className="w-10/12 px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 h-[calc(100vh-100px)]">
+    <div className="w-10/12 px- py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 h-[calc(100vh-100px)]">
       <ResponsiveContainer width="100%" height="100%">
         <ComposedChart
           width={500}
@@ -49,9 +49,8 @@ const Statistics = () => {
             fill="#8884d8"
             stroke="#8884d8"
           />
-          <Bar dataKey="score" barSize={20} fill="#413ea0" />
+          <Bar dataKey="score" barSize={54} fill="#413ea0" />
           <Line type="monotone" dataKey="score" stroke="#ff7300" />
-          <Scatter dataKey="cnt" fill="red" />
         </ComposedChart>
       </ResponsiveContainer>
     </div>

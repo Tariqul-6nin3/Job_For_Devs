@@ -2,7 +2,8 @@ import { getItem } from "../utility/fakeDB";
 import React, { useState, useEffect } from "react";
 
 import { useLoaderData } from "react-router-dom";
-import DataInfo from "./DataInfo";
+
+import ApplyInfo from "./ApplyInfo";
 
 const AppliedJobs = () => {
   const jobData = useLoaderData();
@@ -18,18 +19,20 @@ const AppliedJobs = () => {
   const matchingJobs = jobData.filter(job =>
     Object.keys(appliedJobs).includes(job.job_id)
   );
+  console.log(matchingJobs);
 
   return (
-    <div>
-      <h2>Applied Jobs:</h2>
-      <ul>
+    <>
+      <div className="flex gap-5  px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <button className="btn-primary">Remote</button>
+        <button className="btn-outlined ml-96">Onsite</button>
+      </div>
+      <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         {matchingJobs.map(job => (
-          <li key={job.job_id}>
-            <DataInfo dataInfo={job} />
-          </li>
+          <ApplyInfo key={job.job_id} job={job} />
         ))}
-      </ul>
-    </div>
+      </div>
+    </>
   );
 };
 

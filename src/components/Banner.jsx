@@ -13,10 +13,11 @@ const Banner = () => {
                 Dream Job
               </span>
             </h1>
-            <p>
+            <p className="text-slate-600 tracking-wide">
               Explore thousands of job opportunities with all the information
               you need. Its your future. Come find it. Manage all your job
-              application from start to finish.
+              application <br /> from start to finish.Its your future. Come find
+              it. Manage all your job application from start to finish.
             </p>
             <button className="btn-primary">Get Started</button>
           </div>

@@ -21,8 +21,8 @@
         "country": "USA"
       }
     },
-    "job_type": "fulltime",
-    "work_location": "onsite"
+    "job_type": "Full-time",
+    "work_location": "Onsite"
   },
   {
     "job_id": "d7295ed6-413f-4c8b-b931-6e1fb82d89db",
@@ -46,8 +46,8 @@
         "country": "USA"
       }
     },
-    "job_type": "fulltime",
-    "work_location": "onsite"
+    "job_type": "Full-time",
+    "work_location": "Onsite"
   },
   {
     "job_id": "d114584f-b8cc-4a4e-b4ad-d29ebeba72af",
@@ -71,8 +71,8 @@
         "country": "USA"
       }
     },
-    "job_type": "full-time",
-    "work_location": "remote"
+    "job_type": "Full-time",
+    "work_location": "Remote"
   },
   {
     "job_id": "8f1e9622-c077-4f60-8e3e-27c28c3b05f3",
@@ -96,8 +96,8 @@
         "country": "USA"
       }
     },
-    "job_type": "part-time",
-    "work_location": "onsite"
+    "job_type": "Part-time",
+    "work_location": "Onsite"
   },
   {
     "job_id": "a97aaedc-0b63-4dcf-b4d4-d4eeb04e63af",
@@ -121,8 +121,8 @@
         "country": "USA"
       }
     },
-    "job_type": "full-time",
-    "work_location": "onsite"
+    "job_type": "Full-time",
+    "work_location": "Onsite"
   },
   {
     "job_id": "7523df09-fb75-4a96-a2a5-5f5d179b9d5b",
@@ -146,7 +146,7 @@
         "country": "USA"
       }
     },
-    "job_type": "part-time",
-    "work_location": "remote"
+    "job_type": "Part-time",
+    "work_location": "Remote"
   }
 ]

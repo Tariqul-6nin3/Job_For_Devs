@@ -15,15 +15,17 @@ const Category = () => {
 
   return (
     <>
-      <section className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <section className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 mt-5">
         <div className="text-center">
-          <h1>Job category list</h1>
-          <p>
+          <h1 className="text-4xl text-black font-bold mb-4">
+            Job category list
+          </h1>
+          <p className="text-gray-800 mb-8">
             Explore thousands of job opportunities with all the information you
             need. Its your future
           </p>
         </div>
-        <div className="flex justify-evenly">
+        <div className="flex justify-evenly mb-6">
           {category?.map(cate => (
             <SingleCategory key={cate.id} cate={cate} />
           ))}

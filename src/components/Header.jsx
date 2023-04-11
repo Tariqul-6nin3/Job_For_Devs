@@ -51,7 +51,9 @@ const Header = () => {
           </ul>
         </div>
         <div>
-          <button className="btn-primary">Start Applying</button>
+          <Link to="/applied" className="btn-primary">
+            Start Applying
+          </Link>
         </div>
       </div>
     </>

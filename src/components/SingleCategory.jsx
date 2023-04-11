@@ -6,9 +6,9 @@ const SingleCategory = ({ cate }) => {
   // console.log(cate);
   return (
     <>
-      <section className="bg-gray-200 px-6  space-y-4 py-4">
+      <section className="bg-gray-200 px-6  space-y-3 py-6 rounded-lg">
         <img src={logo} alt="" />
-        <h3>{name}</h3>
+        <h3 className="">{name}</h3>
         <p>{jobs_available}</p>
       </section>
     </>
