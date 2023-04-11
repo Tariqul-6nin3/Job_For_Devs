@@ -1,6 +1,8 @@
+import { getItem } from "../utility/fakeDB";
 import React, { useState, useEffect } from "react";
-import { getItem } from "localforage";
+
 import { useLoaderData } from "react-router-dom";
+import DataInfo from "./DataInfo";
 
 const AppliedJobs = () => {
   const jobData = useLoaderData();
@@ -9,16 +11,26 @@ const AppliedJobs = () => {
   console.log(appliedJobs);
 
   useEffect(() => {
-    getItem("Applying-job")
-      .then(savedJobs => {
-        if (savedJobs) {
-          setAppliedJobs(JSON.parse(savedJobs));
-        }
-      })
-      .catch(error => console.log(error));
+    const cartData = getItem();
+    setAppliedJobs(cartData);
   }, []);
 
-  return <div></div>;
+  const matchingJobs = jobData.filter(job =>
+    Object.keys(appliedJobs).includes(job.job_id)
+  );
+
+  return (
+    <div>
+      <h2>Applied Jobs:</h2>
+      <ul>
+        {matchingJobs.map(job => (
+          <li key={job.job_id}>
+            <DataInfo dataInfo={job} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 };
 
 export default AppliedJobs;
