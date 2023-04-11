@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import DataInfo from "./DataInfo";
 
 const Feature = () => {
-  const data = useLoaderData();
-  // console.log(data);
+  // const data = useLoaderData();
+  const [data, setData] = useState();
+  useEffect(() => {
+    const fetchFeatureData = async () => {
+      const featureData = await fetch("jobs.json");
+      const featureDataRes = await featureData.json();
+      setData(featureDataRes);
+    };
+    fetchFeatureData();
+  }, []);
+
+  console.log(data);
 
   return (
     <>
