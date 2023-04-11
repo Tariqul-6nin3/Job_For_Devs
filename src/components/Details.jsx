@@ -13,7 +13,7 @@ const Details = () => {
   const [details, setDetails] = useState({});
   const { jobId } = useParams();
   const jobData = useLoaderData();
-  console.log(details);
+  // console.log(details);
 
   useEffect(() => {
     const matchingJob = jobData.find(job => job.job_id === jobId);
@@ -34,7 +34,7 @@ const Details = () => {
   const address1 = details?.contact_information?.address?.street;
   const address2 = details?.contact_information?.address?.city;
   const address3 = details?.contact_information?.address?.country;
-  console.log(job_description);
+  // console.log(job_description);
   return (
     <div>
       <div className="grid grid-cols-5 px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">

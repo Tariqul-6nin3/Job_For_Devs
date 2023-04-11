@@ -15,12 +15,12 @@ const addToCart = (id, quantity) => {
 };
 
 const getItem = () => {
-  let shoppingCart = {};
-  const savedCart = localStorage.getItem("shopping-cart");
+  let applyingJobs = {};
+  const savedCart = localStorage.getItem("Applying-job");
   if (savedCart) {
-    shoppingCart = JSON.parse(savedCart);
+    applyingJobs = JSON.parse(savedCart);
   }
-  return shoppingCart;
+  return applyingJobs;
 };
 const deleteItem = () => {
   localStorage.removeItem("shopping-cart");
