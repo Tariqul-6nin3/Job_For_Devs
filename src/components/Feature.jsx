@@ -16,7 +16,7 @@ const Feature = () => {
   }, []);
 
   const handleShowAllJobs = () => {
-    setShowAllJobs(true);
+    setShowAllJobs(prevState => !prevState);
   };
 
   return (
@@ -29,25 +29,17 @@ const Feature = () => {
         </p>
       </div>
       <div className=" grid gap-4 grid-cols-1 md:grid-cols-2 px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-        {showAllJobs
-          ? data.map(dataInfo => (
-              <DataInfo key={dataInfo.job_id} dataInfo={dataInfo} />
-            ))
-          : data
-              .slice(0, 4)
-              .map(dataInfo => (
-                <DataInfo key={dataInfo.job_id} dataInfo={dataInfo} />
-              ))}
+        {data.slice(0, showAllJobs ? data.length : 4).map(dataInfo => (
+          <DataInfo key={dataInfo.job_id} dataInfo={dataInfo} />
+        ))}
       </div>
-      {!showAllJobs && (
-        <div className="text-center">
-          <button
-            className="font-medium  transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-20 md:py-3 m-2 text-lg rounded-xl border-transparent hover:bg-cyan-400  border-2 bg-gradient-to-r from-orange-500 via-purple-500 to-indigo-500 text-white "
-            onClick={handleShowAllJobs}>
-            See More
-          </button>
-        </div>
-      )}
+      <div className="text-center">
+        <button
+          className="font-medium transition duration-200 shadow-md md:mb-0 px-4 py-2 md:px-20 md:py-3 m-2 text-lg rounded-xl border-transparent hover:bg-cyan-400 border-2 bg-gradient-to-r from-orange-500 via-purple-500 to-indigo-500 text-white"
+          onClick={handleShowAllJobs}>
+          {showAllJobs ? "See Less" : "See More"}
+        </button>
+      </div>
     </>
   );
 };

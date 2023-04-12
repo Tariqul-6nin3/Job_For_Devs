@@ -8,7 +8,7 @@ const Banner = () => {
         <div className="flex justify-center items-center">
           <div className="px-16 space-y-6">
             <h1 className="text-5xl tracking-wide font-bold">
-              One Step Closer To Your{" "}
+              One Step <br /> Closer To Your <br />
               <span className="text-2xl w-full lg:leading-tight sm:text-4xl lg:text-6xl lg:max-w-3xl title-text">
                 Dream Job
               </span>

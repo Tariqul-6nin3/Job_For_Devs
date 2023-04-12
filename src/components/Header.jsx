@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <div className="flex justify-around items-center  py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-1">
+      <div className="flex justify-around items-center  py-8 mx-auto sm:max-w-xl md:max-w-full  md:px-24 lg:px-1 bg-blue-100">
         <div>
           <Link to="/">
             <span className="text-4xl  font-bold text-black">JobField</span>

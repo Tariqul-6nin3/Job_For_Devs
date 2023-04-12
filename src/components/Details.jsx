@@ -8,6 +8,7 @@ import {
   PresentationChartBarIcon,
 } from "@heroicons/react/24/solid";
 import { addToCart } from "../utility/fakeDB";
+import PageTopStyle from "./PageTopStyle";
 
 const Details = () => {
   const [details, setDetails] = useState({});
@@ -37,6 +38,7 @@ const Details = () => {
   // console.log(job_description);
   return (
     <div>
+      <PageTopStyle>Selected Job</PageTopStyle>
       <div className="grid grid-cols-6 px-4 mt-6 py-5 mx-auto  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="col-span-4 tracking-wide space-y-6 px-5">
           <div>
@@ -107,7 +109,7 @@ const Details = () => {
           <div>
             <button
               onClick={() => addToCart(job_id, 1)}
-              className="btn-primary mt-6">
+              className="btn-primary w-full">
               Apply Now
             </button>
           </div>

@@ -16,7 +16,7 @@ const DataInfo = ({ dataInfo }) => {
   } = dataInfo;
   return (
     <>
-      <div className="border-2 px-10 py-6 rounded-lg w-11/12">
+      <div className="border-2 px-10 py-6 rounded-b-lg w-11/12 shadow-xl ">
         <div className="flex justify-center">
           <img className="w-3/6 mr-auto h-24" src={company_logo} alt="" />
         </div>
@@ -40,8 +40,9 @@ const DataInfo = ({ dataInfo }) => {
             {salary}
           </p>
         </div>
+
         <Link to={`/job/${job_id}`}>
-          <button className=" mt-4 px-11 py-4 bg-slate-500 rounded-lg text-white text-lg font-bold">
+          <button className=" font-medium  transition duration-200  shadow-md  px-8 py-1 mt-4  text-lg rounded-xl border-transparent border-2 hover:bg-cyan-400 bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-400 text-white">
             View Details
           </button>
         </Link>

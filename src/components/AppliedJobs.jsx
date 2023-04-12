@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
 
 import ApplyInfo from "./ApplyInfo";
+import PageTopStyle from "./PageTopStyle";
 
 const AppliedJobs = () => {
   const jobData = useLoaderData();
@@ -20,13 +21,17 @@ const AppliedJobs = () => {
   }, [jobData]);
 
   const handleFilterClick = filter => {
+    const cartData = getItem();
+    const appliedJobsIds = Object.keys(cartData).filter(id => cartData[id]);
+    const filtered = jobData.filter(job => appliedJobsIds.includes(job.job_id));
+
     if (filter === "remote") {
-      const remoteJobs = appliedjobsdata.filter(
+      const remoteJobs = filtered.filter(
         job => job.work_location.toLowerCase() === "remote"
       );
       setAppliedjobsdata(remoteJobs);
     } else if (filter === "onsite") {
-      const onsiteJobs = appliedjobsdata.filter(
+      const onsiteJobs = filtered.filter(
         job => job.work_location.toLowerCase() === "onsite"
       );
       setAppliedjobsdata(onsiteJobs);
@@ -34,7 +39,8 @@ const AppliedJobs = () => {
   };
 
   return (
-    <div className="">
+    <div>
+      <PageTopStyle>Applied Jobs</PageTopStyle>
       <div className="px-4 py-5 relative sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 mt-12">
         <div className="dropdown dropdown-left dropdown-end absolute right-0">
           <label
