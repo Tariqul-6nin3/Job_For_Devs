@@ -37,60 +37,68 @@ const Details = () => {
   // console.log(job_description);
   return (
     <div>
-      <div className="grid grid-cols-5 px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-        <div className="col-span-3">
+      <div className="grid grid-cols-6 px-4 mt-6 py-5 mx-auto  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div className="col-span-4 tracking-wide space-y-6 px-5">
           <div>
-            <h3>Job description:</h3>
+            <h3 className="text-xl text-black font-semibold ">
+              Job description:
+            </h3>
             <p>{job_description}</p>
           </div>
           <div>
-            <h3>Job Responsiblities</h3>
+            <h3 className="text-xl text-black font-semibold">
+              Job Responsiblities
+            </h3>
             <p>{job_responsibilities}</p>
           </div>
           <div>
-            <h3>Educational Requirements:</h3>
+            <h3 className="text-xl text-black font-semibold">
+              Educational Requirements:
+            </h3>
             <p>{educational_requirements}</p>
           </div>
           <div>
-            <h3>Experience:</h3>
+            <h3 className="text-xl text-black font-semibold">Experience:</h3>
             <p>{experience}</p>
           </div>
         </div>
-        <div className="col-2">
-          <div>
-            <div>
-              <h3>Job detais</h3>
-              <hr />
+        <div className="col-span-2  tracking-wide">
+          <div className="bg-slate-100 rounded-xl ps-8 py-12 space-y-6">
+            <div className="space-y-4">
+              <h3 className="text-xl text-black font-semibold">Job detais</h3>
+              <hr className="w-8/12 border-2" />
               <p>
-                <CurrencyDollarIcon className="w-6 h-6 inline text-black-50 " />
+                <CurrencyDollarIcon className="w-4 h-4 inline text-black-50 " />
                 <strong>Salary:</strong>
 
                 {salary}
               </p>
               <p>
-                <PresentationChartBarIcon className="w-6 h-6 inline text-black-50" />
+                <PresentationChartBarIcon className="w-4 h-4 inline text-black-50" />
                 <strong>Job title:</strong>
                 {job_title}
               </p>
             </div>
 
-            <div>
-              <h3>Contact Information:</h3>
-              <hr />
+            <div className="space-y-4">
+              <h3 className="text-xl  text-black font-semibold">
+                Contact Information:
+              </h3>
+              <hr className="w-8/12 border-2" />
               <p>
-                <PhoneArrowDownLeftIcon className="w-6 h-6 inline text-black-50 " />
+                <PhoneArrowDownLeftIcon className="w-4 h-4 inline text-black-50 " />
                 <strong>Phone:</strong>
 
                 {phone}
               </p>
               <p>
-                <EnvelopeIcon className="w-6 h-6 inline text-black-50 " />
+                <EnvelopeIcon className="w-4 h-4 inline text-black-50 " />
                 <strong>Email:</strong>
 
                 {email}
               </p>
               <p>
-                <MapPinIcon className="w-6 h-6 inline text-black-50 " />
+                <MapPinIcon className="w-4 h-4 inline text-black-50 " />
                 <strong>Address:</strong>
                 {address1},{address2}, {address3}
               </p>
@@ -99,7 +107,7 @@ const Details = () => {
           <div>
             <button
               onClick={() => addToCart(job_id, 1)}
-              className="btn-primary">
+              className="btn-primary mt-6">
               Apply Now
             </button>
           </div>
