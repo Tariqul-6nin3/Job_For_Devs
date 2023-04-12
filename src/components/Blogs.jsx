@@ -3,9 +3,9 @@ import PageTopStyle from "./PageTopStyle";
 
 const Blogs = () => {
   return (
-    <div className="z-0 ">
+    <div className="z-0 mb-8">
       <div>
-        <PageTopStyle>Blog</PageTopStyle>
+        <PageTopStyle>Question And Answering</PageTopStyle>
       </div>
       <div className="max-w-7xl mx-auto mt-10">
         <div

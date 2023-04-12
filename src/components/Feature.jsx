@@ -33,7 +33,7 @@ const Feature = () => {
           <DataInfo key={dataInfo.job_id} dataInfo={dataInfo} />
         ))}
       </div>
-      <div className="text-center">
+      <div className="text-center mb-10 mt-3">
         <button
           className="font-medium transition duration-200 shadow-md md:mb-0 px-4 py-2 md:px-20 md:py-3 m-2 text-lg rounded-xl border-transparent hover:bg-cyan-400 border-2 bg-gradient-to-r from-orange-500 via-purple-500 to-indigo-500 text-white"
           onClick={handleShowAllJobs}>
