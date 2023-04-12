@@ -22,10 +22,10 @@ const Category = () => {
           </h1>
           <p className="text-gray-800 mb-8">
             Explore thousands of job opportunities with all the information you
-            need. Its your future
+            need. Its your future.
           </p>
         </div>
-        <div className="flex justify-evenly mb-6">
+        <div className="flex flex-col gap-7 md:flex-row justify-evenly mb-6">
           {category?.map(cate => (
             <SingleCategory key={cate.id} cate={cate} />
           ))}

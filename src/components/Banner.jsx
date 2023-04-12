@@ -4,12 +4,12 @@ import photo from "../assets/P3OLGJ1 copy 1.png";
 const Banner = () => {
   return (
     <>
-      <section className="flex px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-        <div className="flex justify-center items-center">
-          <div className="px-16 space-y-6">
-            <h1 className="text-5xl tracking-wide font-bold">
+      <section className="flex flex-col-reverse md:flex-row px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div className="flex md:text-left text-center  justify-center items-center">
+          <div className="md:px-16 space-y-6">
+            <h1 className="md:text-5xl mt-4 md:mt-0 text-3xl tracking-wide font-bold">
               One Step <br /> Closer To Your <br />
-              <span className="text-2xl w-full lg:leading-tight sm:text-4xl lg:text-6xl lg:max-w-3xl title-text">
+              <span className="text-4xl w-full lg:leading-tight sm:text-4xl lg:text-6xl lg:max-w-3xl title-text">
                 Dream Job
               </span>
             </h1>
